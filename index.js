@@ -5,13 +5,7 @@ app.get("/", (req, res) => {
   console.log("Hello world received a request.");
 
   const target = process.env.TARGET || "World";
-//  res.send(`Hello ${target}!`);
-
-let x = 0.0001;
-  for (i = 0; i <= 1000000; i++) {
-    x += Math.sqrt(x);
-  }
-  res.send("OK!");
+  res.send(`Hello ${target}!`);
 
 });
 
