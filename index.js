@@ -5,7 +5,7 @@ app.get("/", (req, res) => {
   console.log("Hello world received a request.");
 
   const target = process.env.TARGET || "World";
-  res.send(`Hello there my v1, ${target}!`);
+  res.send(`Hello there my v2 deployed, ${target}!`);
 
 });
 
